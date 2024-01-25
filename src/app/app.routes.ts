@@ -4,5 +4,7 @@ import { InventoryComponent } from './pages/inventory/inventory.component';
 
 export const routes: Routes = [
   {path: '', component: HomeComponent, title: "HomePage"},
-  {path: 'inventory', component: InventoryComponent, title: "Inventory"}
+  {path: 'inventory', component: InventoryComponent, title: "Inventory"},
 ];
+
+// order of routes matters
