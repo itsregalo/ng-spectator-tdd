@@ -1,0 +1,49 @@
+
+
+
+  <p-card header="Contact Form">
+    <form action="" method="post" [formGroup]="contactForm" (ngSubmit)="onSubmit()">
+      <div class="" style="display: flex; flex-direction: column;">
+        <div class="p-2"
+            style="display: flex; flex-direction: column; justify-content: space-between;">
+            <label for="name">Full Name</label>
+            <input
+              pInputText id="name"
+                aria-describedby="name-help"
+                  formControlName="fullName"
+              />
+        </div>
+
+        <div class="p-2"
+            style="display: flex; flex-direction: column; justify-content: space-between;">
+            <label for="category">Category</label>
+            <p-dropdown [options]=""
+                optionLabel="name" [showClear]="true"
+                  placeholder="Select a City"
+                    formCOntrolName="category"
+                ></p-dropdown>
+        </div>
+
+        <div class="p-2"
+            style="display: flex; flex-direction: column; justify-content: space-between;">
+            <label for="email">Email</label>
+            <input pInputText id="email"
+              formControlName="email"
+              aria-describedby="email-help" />
+        </div>
+
+        <div class="p-2"
+            style="display: flex; flex-direction: column; justify-content: space-between;">
+            <label for="message">Message</label>
+            <textarea pInputTextarea id="message"
+                formControlName="message"
+                aria-describedby="message-help" rows="5"></textarea>
+        </div>
+
+        <div class="p-2"
+            style="display: flex; flex-direction: column; justify-content: space-between;">
+            <button pButton type="submit" label="Submit"></button>
+        </div>
+      </div>
+    </form>
+  </p-card>
